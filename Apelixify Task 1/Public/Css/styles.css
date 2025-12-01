@@ -1,0 +1,35 @@
+:root{
+  --muted:#888;
+  --card-bg:#fff;
+  --accent:#111;
+}
+
+body{
+  font-family: Inter, system-ui, Arial;
+  background:#f3f5f8;
+  margin:0;
+  color:#111;
+}
+
+.container{
+  max-width:900px;
+  margin:20px auto;
+  padding:16px;
+}
+
+.card{
+  background:var(--card-bg);
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 6px 18px rgba(20,20,20,0.04);
+  margin-bottom:12px;
+}
+
+.meta{display:flex;gap:12px;align-items:center}
+.meta img{width:48px;height:48px;border-radius:10px;object-fit:cover}
+
+.post-media img, .post-media video{width:100%;border-radius:12px;display:block}
+
+.actions{display:flex;gap:10px;margin-top:8px}
+.btn{padding:6px 10px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.heart.liked{color:#e02222}

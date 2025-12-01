@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task1 Internship - Feed</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header style="display:flex;gap:12px;align-items:center;justify-content:space-between">
+      <div style="display:flex;gap:12px;align-items:center">
+        <img id="myAvatar" src="https://via.placeholder.com/120" width="48" height="48" style="border-radius:10px;object-fit:cover">
+        <div>
+          <div id="pName">User</div>
+          <div id="pUsername" style="color:var(--muted)">@user</div>
+        </div>
+      </div>
+      <div>
+        <button id="notifBtn" class="btn">My Posts</button>
+        <button id="logoutBtn" class="btn">Logout</button>
+      </div>
+    </header>
+
+    <section style="margin-top:18px">
+      <div class="card">
+        <h3>Create Post</h3>
+        <textarea id="caption" placeholder="What's happening?" style="width:100%;height:80px;border-radius:8px;padding:8px"></textarea>
+        <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+          <input type="file" id="media" accept="image/*,video/*">
+          <button id="postBtn" class="btn">Post</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="feed" style="margin-top:18px"></section>
+
+    <!-- modal -->
+    <div id="modalBack" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);align-items:center;justify-content:center">
+      <div id="modal" style="width:90%;max-width:700px;background:#fff;padding:16px;border-radius:10px"></div>
+    </div>
+
+    <div id="notifList" style="display:none;position:fixed;right:16px;top:80px;width:320px;max-height:60vh;overflow:auto;background:#fff;padding:10px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.15)"></div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
